@@ -1,0 +1,43 @@
+/* news sroll start */
+
+.ticker {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 100%;
+    overflow: hidden;
+}
+
+.ticker ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+}
+
+.ticker li {
+    padding-left: 1rem;
+    white-space: nowrap;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 5px;
+}
+
+.ticker li:first-child {
+    padding-left: 0;
+}
+
+.ticker li::before {
+    content: "  +++";
+    display: inline;
+    padding-right: 1rem;
+}
+
+.ticker li:last-child::after {
+    content: "   +++";
+    display: inline;
+    padding-left: 1rem;
+}
+
+
+/* nesw scroll end */
